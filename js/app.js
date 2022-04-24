@@ -52,15 +52,7 @@ const menu = document.querySelector(".menu");
 		}
 	}
 
-//	menuNav.addEventListener("click", (e) => {
-//		const navTarget = e.target;
 
-//		if (showMenu === true && navTarget !== menuNav) {
-//		    menuNav.remove("close");
-//			showMenu = false;
-//		}
-//	});
-	
 
 
 
