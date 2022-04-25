@@ -2,10 +2,12 @@
 :before {
     box-sizing: border-box;
     border: 0 solid  #e5e7eb;
+    
 }
 :after,
 :before {
     --tw-content: "";
+    
 }
 html {
     line-height: 1.5;
@@ -258,11 +260,16 @@ video {
 }
 
 .menu-nav {
+    background-color: paleturquoise;
     color: #20b6ac;
-    margin-left: 207px;
-    margin-top: 21px;
-    font-size: 18px;
-    background-color: #141628;
+    text-align: center;
+    margin-left: -32px;
+    padding-top: 25%;
+    padding-bottom: 75%;
+    font-size: 26px;
+    font-weight: 600;
+    
+    
 }
 
 .menu.show {
@@ -443,7 +450,7 @@ html {
 
 .font-poppins {
     animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
-    transform-origin: center top;
+    transform-origin: bottom top;
 }
 
 .w-full {
@@ -488,42 +495,6 @@ html {
 }
 
 
-@-webkit-keyframes shake {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}
-@keyframes shake {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}
-.shake {
-    -webkit-animation-name: shake;
-    -webkit-animation-duration: 1.5s;
-    -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite;
-}
-.shake {
-    display:inline-block;
-    animation: shake 600ms 15;
-}
 @-webkit-keyframes mouse-scroll {
     0% {
         opacity: 0;
@@ -547,30 +518,7 @@ html {
     }
 }
 
-.distort-text {
-    padding: 10px;
-    animation: distort 1000ms 5;
-}
-.distort-text:hover {
-    animation: distort 1000ms infinite;
-}
-@keyframes distort {
-    0% {
-        text-shadow: 5px 4px #20b6ac, -5px -6px #20b6ac;
-    }
-    25% {
-        text-shadow: -5px -6px #20b6ac, 5px 4px #20b6ac;
-    }
-    50% {
-        text-shadow: 5px -4px #20b6ac, -8px 4px #20b6ac;
-    }
-    75% {
-        text-shadow: -8px -4px #20b6ac, -5px -4px #20b6ac;
-    }
-    100% {
-        text-shadow: -5px 0 #20b6ac, 5px -4px #20b6ac;
-    }
-} 
+
 .absolute {
     position: absolute;
 }
@@ -950,11 +898,21 @@ html {
     }
 }
 @media (min-width: 768px) {
+    
 
-   .bg-primary #top {
-       max-width: 100%;
-   }
-
+    .menu-btn {
+        visibility: hidden;
+    }
+    .menu-nav {
+        visibility: visible;
+        display: flex;
+        padding: 14px;
+        margin-right: 147px;
+        justify-content: space-around;
+        font-size: 24px;
+        font-weight: 300;
+        
+    }
     .md\:flex {
         display: flex;    
     }
@@ -1042,7 +1000,19 @@ html {
 
 @media (min-width: 1024px) {
 
-  
+    .menu-btn {
+        visibility: hidden;
+    }
+    .menu-nav {
+        visibility: visible;
+        display: flex;
+        padding: 14px;
+        justify-content: space-around;
+        font-size: 24px;
+        margin-right: 117px;
+        font-weight: 300;
+        
+    }
    
     .lg\:items-start {
         align-items: flex-start;

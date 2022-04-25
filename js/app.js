@@ -49,9 +49,15 @@ const menu = document.querySelector(".menu");
 
 			// Reset the menu state
 			showMenu = false;
-		}
+		}	
 	}
 
+ 	menuNav.addEventListener("click", toggleMenu, false);
+	  var init = function() {
+		   bindActions();
+		    menuNavClicked();
+	
+	}; 
 
 
 
