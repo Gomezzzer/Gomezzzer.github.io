@@ -11,7 +11,7 @@
 }
 html {
     line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
+   /* -webkit-text-size-adjust: 100%; */
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
@@ -260,18 +260,17 @@ video {
 }
 
 .menu-nav {
-    background-color: paleturquoise;
+    background-color: #1b1e32;
     color: #20b6ac;
     text-align: center;
     margin-left: -32px;
+    padding-right: 27px;
     padding-top: 25%;
-    padding-bottom: 75%;
-    font-size: 26px;
-    font-weight: 600;
-    
-    
+    padding-bottom: 116%;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 2;   
 }
-
 .menu.show {
     visibility: visible;
 }
@@ -281,12 +280,8 @@ video {
     color: #20b6ac;
     margin-top: 24px;
     margin-left: 4px;
-    font-size: 25px;
-    
+    font-size: 25px;    
 }
-
-
-
 /* Adding a transition delay to the
    4 items in the navigation menu */
 .nav-item:nth-child(1) {
@@ -305,61 +300,61 @@ video {
     transition-delay: 0.4s;
 }
 
+.bg-section-two {
+    background-color: #141628;
+}
+
+.p-3 {
+    margin-left: -2.3rem;
+}
+
+#projects {
+    margin-left: 32px;
+    margin-top: 34px;
+}
+#project-one {
+    margin-top: 20px;
+}
 #project-one,
 #project-two,
 #project-three,
-#project-four {
-   background-color: #20b6ac;
+#project-four,
+#project-five,
+#project-six {
+   background-color: #1b1e32;
    border-radius: 25px;
    width: 85%;
    padding-top: 5px;
 }
-
 #project-two {
-    margin-top: 50px;
+    margin-top: 43px;
     margin-bottom: -3px;
+    margin-right: 28px;
 }
-
 #project-three,
 #project-four {
     margin-top: 45px;
 }
-
-
-.container {
-    width: 100%;
+#project-four {
+    margin-bottom: 33px;
 }
-
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
+#project-five, #project-six {
+    margin-bottom: 33px;
 }
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+#skills {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 5px;
 }
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
-}
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-}
-@media (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    }
-}
-
+.p-6 {
+    padding: 16px;
+    margin: -48px;
+ }
 
 .bg-primary {
-   background-color:   #141628; 
-   justify-content: center;
+   background-color: #141628; 
+   justify-content: center; 
 }
 
 .bg-button {
@@ -369,9 +364,9 @@ video {
     color: #20b6ac;
 }
 .main-font2 {
-    background-color: #20b6ac;
+    background-color: #141628;
     border-radius: 25px;
-    margin: 16px;
+    margin: 21px;
     padding-top: 21px;
     padding-bottom: 21px;
 }
@@ -379,11 +374,13 @@ video {
     color: #fff;
 }
  #contact {
-  background-color: #20b6ac;
+  background-color: #1b1e32;
   border-radius: 25px;
   margin: 26px;
 }
-
+.bg-primary .p-10 {
+    background-color: #141628;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -428,7 +425,6 @@ html {
     -moz-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
-
 
 
 @keyframes fadeAndScale {
@@ -546,18 +542,20 @@ html {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-}
+
 .mt-4 {
     margin-top: 1rem;
 }
 .mt-16 {
     margin-top: 4rem;
+    color: #20b6ac;
+}
+#p1 {
+  margin-top: 2px;
+  margin-bottom: 2px;;
 }
 .mb-16 {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 }
 .-mt-1 {
     margin-top: -0.25rem;
@@ -582,6 +580,11 @@ html {
 }
 .mb-20 {
     margin-bottom: 5rem;
+    background: #141628;
+    border-radius: 20%;
+    margin: 41px;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 .mb-6 {
     margin-bottom: 1.5rem;
@@ -595,15 +598,16 @@ html {
 .mt-6 {
     margin-top: 1.5rem;
 }
-  .block {
-    display: block;
-}
+
 .flex {
     display: flex;
 }
-
 .grid {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 23px;
+    margin-top: -64px; 
+    column-gap: 30px;
 }
 .hidden {
     display: none;
@@ -623,15 +627,14 @@ html {
 .grid-flow-col {
     grid-auto-flow: column;
 }
-.grid-rows-3 {
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-}
+
 .flex-row {
     flex-direction: row;
 }
 .flex-col {
     flex-direction: column;
 }
+
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -641,6 +644,7 @@ html {
 .items-center {
     align-items: center;
 }
+
 .justify-center {
     justify-content: center;
 }
@@ -695,10 +699,14 @@ html {
     border-radius: 0.25rem;
 }
 .rounded-3xl {
-    border-radius: 7.5rem;
+    border-radius: 1.5rem;
 }
 .rounded-md {
     border-radius: 0.375rem;
+}
+.md\:w-4\/5 {
+    width: 90%;
+    border-radius: 25%;
 }
 .rounded-lg {
     border-radius: 0.5rem;
@@ -734,7 +742,7 @@ html {
     padding: 1rem;
 }
 .p-3 {
-    padding: 0.75rem;
+    padding: .3rem;
 }
 .p-5 {
     padding: 1.25rem;
@@ -771,12 +779,7 @@ html {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-.pt-24 {
-    padding-top: 6rem;
-}
-.pb-24 {
-    padding-bottom: 6rem;
-}
+
 .text-left {
     text-align: left;
 }
@@ -796,7 +799,7 @@ html {
 
 .text-3xl {
     font-size:  1.875rem;
-    line-height: 2.25rem;
+    line-height: 5.25rem;
     color: #20b6ac;
 }
 
@@ -807,14 +810,24 @@ html {
 .text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+    margin-left: 3px;
+    margin-top: 9px;
+    padding-bottom: 9px;
+}
+.text-contact {
+    margin-left: 2px;
+    font-weight: 400;
+    font-size: 35px;
 }
 .text-2xl {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2rem;
 }
 .text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 1.85rem;
+    margin-top: 16px;
+    padding-top: 6px;
 }
 .font-medium {
     font-weight: 500;
@@ -898,20 +911,27 @@ html {
     }
 }
 @media (min-width: 768px) {
-    
-
-    .menu-btn {
-        visibility: hidden;
+ 
+    .main-font2 {
+        background-color: #141628;
+        border-radius: 25px;
+        margin: 41px;
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
-    .menu-nav {
-        visibility: visible;
-        display: flex;
-        padding: 14px;
-        margin-right: 147px;
-        justify-content: space-around;
-        font-size: 24px;
-        font-weight: 300;
-        
+    .name {
+        position: fixed;
+        color: #20b6ac;
+        margin-top: 24px;
+        margin-left: 23px;
+        font-size: 33px;    
+    }
+    .menu-btn .btn-line {
+        width: 40px;
+        height: 6px;
+        margin: 0 0 5px 0;
+        background: #20b6ac;
+        transition: all 0.5s ease-out;
     }
     .md\:flex {
         display: flex;    
@@ -920,11 +940,13 @@ html {
         display: none;
     }
     .md\:w-4\/5 {
-        width: 72%;
+        width: 60%;
         border-radius: 25%;
     }
     .md\:w-2\/5 {
-        width: 40%;
+        width: 45%;
+        margin-left: 13rem;
+        border-radius: 25%;
     }
     .md\:grid-rows-1 {
         grid-template-rows: repeat(1, minmax(0, 1fr));
@@ -959,42 +981,105 @@ html {
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
-
-
-    #project-one {
-        margin-right: -82px;
+    .mt-12 {
+        margin-top: 1rem;
     }
-      
+    .mb-16 {
+        margin-bottom: 1rem;
+    }
+    .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        text-align: left;
+        margin-left: 38px;
+        margin-top: 16px;
+        padding-bottom: 14px;
+    } 
+
+    .p-3 {
+        margin-left: -2.3rem;
+        padding: 0.75rem;
+    }
+    .mx-5 {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .bg-section-one {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #projects {
+        margin-left: 45px;
+    }
+    #project-one {
+       margin-left: 36px;
+       margin-bottom: -1px;
+    }  
     #project-two {
         padding-top: 2px;
-        margin-bottom: -3px;
-        margin-left: 38px;
+        margin-bottom: 1px;
+        margin-left: 27px;
+        margin-top: 20px;
     }
-
+    #project-three {
+        margin-left: 36px;
+        margin-bottom: 32px;
+    }
     #project-three,
     #project-four {
         margin-top: 45px;
     }
 
     #project-four {
-        margin-left: 33px;
+        margin-left: 25px;
     }
-    
+    #project-five, #project-six {
+        margin-bottom: 33px;
+        margin-top: 14px;
+        margin-left: 37px;
+    }
+    #project-six {
+        margin-left: 26px;
+        padding-bottom: 3rem;
+    }
     #project-one,
     #project-two,
     #project-three,
-    #project-four {
-       background-color: #20b6ac;
-       border-radius: 20%;  
+    #project-four,
+    #project-five,
+    #project-six  {
+       background-color: #1b1e32;
+       border-radius: 25px;  
     }
-
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 23px;
+        margin-top: -64px;
+        column-gap: 40px;
+    }
     #contact {
-        margin-left: 60px;
-        margin-right: -41px;
+        background-color: #1b1e32;
+        border-radius: 25px;
+        margin: 26px;
+        padding-right: 5px;
     }
-
-    
-   
+    .w-full2 {
+        width: 50%;
+    }
+    .p-6 {
+        padding: 5px;
+        margin: 20px;
+    }
+    .text-contact {
+       text-align: left;
+        font-weight: 500;
+        font-size: 42px;
+    }
+    .bg-primary .p-10 {
+        background-color: #141628;
+    }
+ 
 }
   
 
@@ -1006,14 +1091,28 @@ html {
     .menu-nav {
         visibility: visible;
         display: flex;
-        padding: 14px;
+        padding: 34px;
         justify-content: space-around;
-        font-size: 24px;
-        margin-right: 117px;
+        font-size: 15px;
+        margin-left: 28rem;
+        margin-right: 74px;
         font-weight: 300;
-        
+        background-color: #141628;
     }
-   
+    .name {
+        margin-left: 56px;
+    }
+    .main-font2 {
+        background-color: #141628;
+        border-radius: 25px;
+        margin: 41px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    .flex .space-x-10{
+        display: flex;
+        margin-left: 19rem;
+    }
     .lg\:items-start {
         align-items: flex-start;
     }
@@ -1023,40 +1122,176 @@ html {
         
     }
     .lg\:text-5xl {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1;
+        margin-left: -0.9rem;
     }
     .lg\:text-2xl {
         font-size: 1.5rem;
         line-height: 2rem;
     }
     .lg\:text-3xl {
-        font-size: 1.875rem;
+        font-size: 1rem;
         line-height: 2.25rem;
     }
 
     .xl\:w-2\/5 {
-        width: 40%;
+        width: 75%;
     }
-    .xl\:w-3\/5 {
-        width: 60%;
+    .md\:flex-row {
+        flex-direction: row;
+    }
+    .icon {
+        margin-left: 5rem;
+    }
+    .bg-section-one {
+        display: grid;
+        grid-template-columns: 21rem 21rem 21rem;
+        grid-area: auto;
+        justify-content: center;
+    }
+    .md\:px-14 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .md\:w-4\/5 {
+        width: 39%;
+        border-radius: 25%;
+        margin-left: 17rem;
+    }
+    .md\:items-center {
+        align-items: center;
+    }
+    .mb-16 {
+        margin-bottom: 1rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .p-12 {
+        padding: .5rem;
+        margin-left: 2.5rem;
+    }
+    .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(-2rem * var(--tw-space-x-reverse));
+        margin-left: calc(1rem * (1 - var(--tw-space-x-reverse)));
     }
     #projects {
-        display: grid;
-        grid-column: 3/4;
-        grid-template-columns: 1fr;
-      }
-      #contact {
-        margin-right: 50px;
+        margin-left: 4.5rem;
     }
-
-  
+    #project-one,
+    #project-two,
+    #project-three,
+    #project-four,
+    #project-five,
+    #project-six  {
+       background-color: #1b1e32;
+       border-radius: 25px;  
+    }
+    #project-one {
+        margin-left: 60px;
+    }
+    #project-one .p-12 {
+        margin-left: 5px;
+        margin-top: 12px;
+    }
+    #project-two {
+        margin-bottom: -2px;
+        margin-left: 37px;
+    }
+    #project-three {
+        margin-top: 21px;
+        margin-bottom: -3px;
+        margin-left: 11px;
+    }
+    #project-three .p-12 {
+        margin-top: 9px;
+    }
+    #project-four {
+        margin-left: 60px;
+        margin-top: 19px;
+    }
+    #project-five {
+        margin-top: 20px;
+    }
+    #project-six {
+        margin-top: 21px;
+        margin-left: 12px;
+    }
+    #contact {
+        background-color: #141628;
+        border-radius: 25px;
+        margin-left: 7rem;
+        outline: 8px  paleturquoise;
+        padding-right: 5px;
+    }
+    
+    #email, #password, #message {
+        background-color: #1b1e32;
+    }
+    .bg-primary .p-10 {
+        background-color: #141628;
+    }
+    #skills {
+        margin-left: 6rem;
+    }
+    
+    
 }
+  
+
 @media (min-width: 1280px) {
     .xl\:w-2\/5 {
         width: 40%;
     }
     .xl\:w-3\/5 {
+        width: 96%;
+    }
+    .menu-nav {
+       margin-left: 39rem;
+    }
+    .bg-section-one {
+        display: grid;
+        grid-template-columns: 27rem 27rem 27rem;
+        grid-area: auto;
+        margin-left: -7px;
+    }
+    .xl\:w-2\/5 {
         width: 60%;
     }
+    .icon {
+        margin-left: 23rem;
+    }
+    .flex .space-x-10{
+        display: flex;
+        margin-left: 29rem;
+    }
+    .md\:flex-row {
+        flex-direction: row;
+    }
+    .md\:px-14 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .md\:w-4\/5 {
+        width: 39%;
+        border-radius: 25%;
+        margin-left: 26rem;
+    }
+    .md\:items-center {
+        align-items: center;
+    }
+    .mb-16 {
+        margin-bottom: 1rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .p-12 {
+        padding: .5rem;
+        margin-left: 4rem;
+    }
+    #projects {
+        margin-left: 3rem;
+    }
+   
 }
