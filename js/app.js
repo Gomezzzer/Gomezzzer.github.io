@@ -1,12 +1,6 @@
 // mobile menu
-const btn = document.querySelector("button.mobile-menu-button");
+/*const btn = document.querySelector("button.mobile-menu-button");*/
 const menu = document.querySelector(".menu");
-
-
-// mobile menu event listeners
-//btn.addEventListener("click", () => {
-//    menu.classList.toggle("hidden");
-//});
 
 
 
@@ -59,7 +53,7 @@ const menu = document.querySelector(".menu");
 	
 	}; 
 
-
+   
 
 
 	
