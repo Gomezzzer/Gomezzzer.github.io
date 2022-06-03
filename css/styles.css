@@ -201,8 +201,6 @@ video {
    display: none;
 }
 
-
-
  /* Styling the menu button */
  .menu-btn {
     position: fixed;
@@ -212,7 +210,6 @@ video {
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
-
 
 .navbar {
     position: fixed;
@@ -434,7 +431,7 @@ html {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
     -webkit-animation-delay: alternate;
-    animation-delay: alternate;
+    /*animation-delay: alternate;*/
 }
 .two {
     -webkit-animation-delay: 0.2s;
@@ -473,13 +470,13 @@ html {
 
 .font-poppins {
     animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
-    transform-origin: bottom top;
+    transform-origin: bottom;
 }
 
 .w-full {
     animation: fadeAndScale 3s cubic-bezier(.39,-1.05,.58,1.95);
     animation-delay: -0.2s;
-    transform-origin: bottom top;
+    transform-origin: bottom;
 }
 
 .flex {
@@ -876,11 +873,10 @@ html {
 .text-\[\#fff\],
 .text-selected-text {
     --tw-text-opacity: 1;
-    color: #fff / var(--tw-text-opacity);
+    color: #20b6ac;
 }
 .text-gray-900 {
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .rounded-lg {
     --tw-text-opacity: 1;
@@ -1161,9 +1157,10 @@ html {
         padding-bottom: 21px;
     }
     .gomez {
-        visibility: visible;
+        visibility: hidden;
         text-align: left;
         margin-left: 2rem;
+        margin-right: 46rem;
         margin-top: 1rem;
     }
     .mx-5, .mt-2 {
