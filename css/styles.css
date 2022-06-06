@@ -579,7 +579,7 @@ html {
   padding-top: 20px;
 }
 .mb-16 {
-    margin-bottom: 0rem;
+    margin-bottom: 0rem; 
 }
 .-mt-1 {
     margin-top: -0.25rem;
@@ -759,7 +759,7 @@ html {
     padding: 3rem;
 }
 .p-2 {
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 .p-1 {
     padding: 0.25rem;
@@ -774,7 +774,7 @@ html {
     padding: 1.25rem;
 }
 .p-10 {
-    padding: 2.5rem;
+    padding: 1.5rem;
 }
 .px-8 {
     padding-left: 2rem;
@@ -850,7 +850,7 @@ html {
     line-height: 2rem;
 }
 .text-xl {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.85rem;
     margin-top: 16px;
     padding-top: 6px;
