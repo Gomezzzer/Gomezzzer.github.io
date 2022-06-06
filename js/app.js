@@ -46,12 +46,12 @@ const menu = document.querySelector(".menu");
 		}	
 	}
 
- 	menuNav.addEventListener("click", toggleMenu, false);
-	  var init = function() {
-		   bindActions();
-		    menuNavClicked();
-	
-	}; 
+	menuNav.addEventListener("click", toggleMenu, false);
+	var init = function() {
+		 bindActions();
+		  menuNavClicked();
+  
+  }; 
 
    
 

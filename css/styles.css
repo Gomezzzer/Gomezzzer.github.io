@@ -346,7 +346,7 @@ video {
 .para-2 {
     color: #fff;
     font-size: 22px;
-    margin-top: 32px;
+    margin-top: 34px;
 }
 .para-3 {
     color: #fff;
@@ -575,7 +575,8 @@ html {
 }
 #p1 {
   margin-top: 2px;
-  margin-bottom: 2px;;
+  margin-bottom: 2px;
+  padding-top: 20px;
 }
 .mb-16 {
     margin-bottom: 0rem;
@@ -938,7 +939,7 @@ html {
     .para-2 {
         color: #fff;
         font-size: 19px;
-        margin-top: 5px;
+        margin-top: 6px;
         padding: 10px;
     } 
 }
@@ -1177,7 +1178,7 @@ html {
     .para-1 {
         color: #fff;
         font-size: 19px;
-        margin-top: 30px;
+        margin-top: 27px;
     }
     .para-2 {
         color: #fff;
