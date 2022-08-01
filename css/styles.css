@@ -467,7 +467,7 @@ html {
         transform: scale3d(1,1,1);
     }
 }
-
+/*
 .font-poppins {
     animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
     transform-origin: bottom;
@@ -489,7 +489,7 @@ html {
     transform-origin: center top;
 }
    
-
+*/
 
 @keyframes fadeAndScale2 {
     0% {
@@ -699,7 +699,7 @@ html {
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * (1 - var(--tw-space-x-reverse)));
+    margin-left: calc(1.5rem * (1 - var(--tw-space-x-reverse)));
 }
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
@@ -1162,7 +1162,7 @@ html {
         text-align: left;
         margin-left: 2rem;
         margin-right: 46rem;
-        margin-top: 1rem;
+        margin-top: -6rem;
     }
     .mx-5, .mt-2 {
         visibility: visible;
@@ -1208,7 +1208,7 @@ html {
     }
     .flex .space-x-10{
         display: flex;
-        margin-left: 21rem;
+        margin-left: 22rem;
     }
     .lg\:items-start {
         align-items: flex-start;
@@ -1222,6 +1222,7 @@ html {
         font-size: 2.5rem;
         line-height: 1;
         margin-left: 11.1rem;
+        margin-top: 1rem;
     }
     .lg\:text-2xl {
         font-size: 1.5rem;
@@ -1394,6 +1395,12 @@ html {
     #projects {
         margin-left:30rem;
         text-align: left;
+    }
+
+    .space-x-10 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(1.5rem * (1 - var(--tw-space-x-reverse)));
     }
    
 }
