@@ -467,29 +467,7 @@ html {
         transform: scale3d(1,1,1);
     }
 }
-/*
-.font-poppins {
-    animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
-    transform-origin: bottom;
-}
 
-.w-full {
-    animation: fadeAndScale 3s cubic-bezier(.39,-1.05,.58,1.95);
-    animation-delay: -0.2s;
-    transform-origin: bottom;
-}
-
-.flex {
-    animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
-    transform-origin: center top;
-}
-
-.bg-section-two {
-    animation: fadeAndScale 4s cubic-bezier(.39,-1.05,.58,1.95);
-    transform-origin: center top;
-}
-   
-*/
 
 @keyframes fadeAndScale2 {
     0% {
@@ -1367,6 +1345,7 @@ html {
     .flex .space-x-10{
         display: flex;
         margin-left: 29rem;
+        
     }
     .md\:flex-row {
         flex-direction: row;
@@ -1404,3 +1383,4 @@ html {
     }
    
 }
+
