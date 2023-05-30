@@ -1,443 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
- 
-    <title>Jorge Gomez | Portfolio</title>   
- </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body class="bg-primary" id="top">
-    
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>George Gomez | Web Developer</title>
+  </head>
+
+  <body>
     <!-- Navbar -->
-    <header class="font-poppins font-medium text-lg sticky top-0">
-         <div class="bg-primary shadow-lg flex justify-between items-center mx-auto px-8 md:px-14 py-6 lg:px-24 w-full">
-                <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-            </div>
-            <div class="name">Gomezzzer</div>
-                <nav class="menu">
-                    <div class="menu-branding">
-                        <div class="portrait">
-      
-                        </div>
-                    </div>
-                   
-                    <ul class="menu-nav">
-                        <li class="nav-item current">
-                            <a href="#" class="text-selected-text">
-                                Home</a>
-                        </li>
+    <nav>
+        <h1>George Gomez</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
 
-                        <li class="nav-item">
-                            <a href="#about"  class="nav-link">
-                                About</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a href="#projects" class="nav-link">
-                                Projects</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link">
-                                Skills</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">
-                                Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-         </div> 
-    </header>
-   
-    <hr style="height:2px;border-width:0;color:#20b6ac;background-color:#20b6ac">
-   
-      <!-- About section -->
-    <section class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center" id="about">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="images/me5.jpg"
+          alt="george-gomez"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore tempore minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos!
+          </p>
+        </div>
+  </section>
 
-    
-        <div class="flex flex-col w-full p-2 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-            <div class="main-font2">
-            <h1 class="font-semibold font-poppins text-4xl text-white md:text-2xl lg:text-5xl text-center md:text-center">Hello!<br> I'm  <span class="main-font">Jorge Gomez</span>, <br>I am a Full Stack Web Developer and make beautiful things on the internet. </h1>
-                <p class="font-thin font-montserra text-white mt-20 text-2xl md:text-2xl lg:text-2xl text-center md:text-left"> I possess skills in both front-end and back-end web development, as well as server and database management knowledge.
-                    As a front-end developer, I am skilled in using HTML, CSS, and JavaScript to create a website's user interface and experience. I am also proficient in using front-end frameworks such as React.
-                      </p>
-                <p class="font-thin font-montserra text-white mt-16 text-2xl md:text-2xl lg:text-2xl text-center md:text-left"> As a Back-End Developer, I work with server-side programming languages such as Node.js, and Ruby, to create the logic and functionality of the website. In addition to my technical skills, as a full-stack web developer, I also possess problem-solving, project management, and strong communication skills.</p>
-            </div> 
-            <div class="flex space-x-10 my-2 md:items-center justify-center mb-16">
-                <a href="#projects" class="nav-link">
-                    <div class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-20 flex items-center space-x-3 border-solid border-2 border-white text-xl hover:bg-slate-800">
-                        Projects
-                    </div>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <div class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-20 flex items-center text-xl hover:border-2 hover:bg-slate-800">
-                        <a href="https://gomezzzer.github.io/resume/">Resume</a> 
-                    </div>
-                    <p>
-                      
-                    </p>
-                </a>
-            </div>
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+          autem deleniti cupiditate molestias quis unde quae totam porro dicta
+          iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+          nostrum dolor minus, libero delectus praesentium perferendis
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+          consequuntur labore? Ea totam voluptas amet!
+        </p>
+      </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="images/html.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="images/css.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="images/js.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
           </div>
-         
-        <div class="w-full xl:w-2/5 p-12 overflow-hidden">
-         <div class="gomez">
-          <a href="https://github.com/Gomezzzer"> 
-            <div class="p-3 rounded-xl text-white font-bold font-poppins border-solid border-2 border-[#F62BA5] hover:bg-slate-800"> 
-                <span class="text-white text-sm font-montserrat font-thin">@</span>
-            </div>
-          </a>
-        <!--
-        <div class="mx-5 mt-2">
-            <span>Gomezzzer</span> 
-        </div> -->
-        </div>
-        
-            
-         
-            <img src="images/me5.jpg" alt="Jorge Gomez" class="rounded-3xl mx-auto w-full md:w-4/5 " onclick="alert('Hello, welcome to my page!');"/>
-            <div class="flex mt-16 mb-16 flex-row space-x-6 justify-center">
-                <a href="https://www.linkedin.com/in/jorge-gomez-a6865313a/" class="icon">
-                    <img width="46" height="45" src="images/linkedin-icon.svg" alt="Linkedin" class="text-white -mt-1 hover:bg-[#20b6ac] rounded-md"/>
-                </a>
-                <a href="https://github.com/Gomezzzer" class="icon">
-                    <img width="65" height="75" src="images/github-icon.svg" alt="GitHub" class=" text-white p-2 hover:bg-[#20b6ac] rounded-md"/>
-                </a>
-                <a href="https://twitter.com/Gomezzzer" class="icon">
-                    <img width="65" height="75" src="images/twitter-icon.svg" alt="Twitter" class="text-white  p-2 hover:bg-[#20b6ac] rounded-md"/>
-                </a>
-                <a href="mailto:gomezgeorge132@gmail.com" class="icon">
-                    <img width="65" height="75" src="images/email-icon.svg" alt="Email" class="text-white p-1 hover:bg-[#20b6ac] rounded-md"/>
-                </a>
-                
-            </div>
-         </div>
-    </section>
-    <hr style="height:2px;border-width:0;color:#20b6ac;background-color:#20b6ac">
-
-
-    <!-- Projects section --> 
-    <h1 class="font-semibold font-poppins text-4xl text-white md:text-2xl lg:text-5xl text-left md:text-left"  id="projects">Projects I've Built</h1>
-    <section class="bg-section-one">
-        <!-- Project One -->
-        
-        <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col mb-16 items-center"  id="project-one">
-            
-            <div class="flex flex-col w-full p-4 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-                
-                <h1 class="font-semibold font-poppins text-xl text-white md:text-xl lg:text-3xl text-left md:text-left mt-12 underline decoration-slate-500">Online Registration Form</h1>
-                    <p class="main-font font-semibold font-montserrat text-xl mt-16" id="p1">Approach</p>
-                    <p class="para-1">Responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes HTML/CSS. </p>
-                    <hr style="height:3px;border-width:0;color:paleturquoise;background-color:paleturquoise">
-                <div class="flex space-x-8 my-2 md:items-center justify-center mb-16">
-                    <a href="https://gomezzzer.github.io/Online-Registration-Form/" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-16 flex items-center space-x-3 border-solid border-2 border-white text-xl sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            Live Demo
-                        </div>
-                    </a>
-                    <a href="https://github.com/Gomezzzer/Online-Registration-Form.git" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-16 flex items-center text-xl w-full sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            Source Code
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="w-full xl:w-2/5 p-12 overflow-hidden md:pt-1">
-                <img src="images/Online-Registration-Form.png" alt="project name" class="rounded-3xl text-white" />
-                <div class="flex items-center mt-10 justify-center">
-                <div>
-                   
-                    </div>
-                </div>
-            </div>
-        </div>
-            <!-- Project Two -->
-        <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center " id="project-two">
-        
-            <div class="flex flex-col w-full p-4 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-                <h1 class="font-semibold font-poppins text-xl text-white md:text-xl lg:text-3xl text-left md:text-left mt-5 underline decoration-slate-500">Web Style Guide</h1>
-                    <p class="main-font font-semibold font-montserrat text-xl mt-16" id="p2">Approach</p>
-                    <p class="para-2"> Web style guide using Sass micro-framework to quickly prototype this website. Mobile-First-Responsive-layout. HTML/CSS/SASS</p>
-                    <hr style="height:3px;border-width:0;color:paleturquoise;background-color:paleturquoise">
-                <div class="flex space-x-8 my-2 md:items-center justify-center mb-16">
-                    <a href="https://gomezzzer.github.io/Web-Style-Guide/" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-16 flex items-center space-x-3 border-solid border-2 border-white text-xl sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            <span>Live Demo</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/Gomezzzer/Web-Style-Guide.git" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-16 flex items-center text-xl w-full sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            <span class="">Source Code</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="w-full xl:w-2/5 p-12 overflow-hidden md:pt-1">
-                <img src="images/Web-Style-Guide.png" alt="project name" class="rounded-3xl text-white"/>
-                    <div class="flex items-center mt-10 justify-center">
-                    <div>
-                    </div>
-                    </div>
-            </div>
-        </div>
-        <!-- Project Three -->
-        <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center " id="project-three">
-            
-            <div class="flex flex-col w-full p-4 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-                <h1 class="font-semibold font-poppins text-xl text-white md:text-xl lg:text-3xl text-left md:text-left mt-5 underline decoration-slate-500">Interactive Photo Gallery</h1>
-                    <p class="main-font font-semibold font-montserrat text-xl mt-16" id="p3">Approach</p>
-                    <p class="para-3">Interactive image gallery using HTML, CSS and JavaScript to create a gallery of photos. HTML/CSS/JavaScript</p>
-                    <hr style="height:3px;border-width:0;color:paleturquoise;background-color:paleturquoise">
-                <div class="flex space-x-8 my-2 md:items-center justify-center mb-16">
-                    <a href="https://gomezzzer.github.io/Interactive-Photo-Gallery/" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-16 flex items-center space-x-3 border-solid border-2 border-white text-xl sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            <span>Live Demo</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/Gomezzzer/Interactive-Photo-Gallery.git" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-16 flex items-center text-xl w-full sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            <span class="">Source Code</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="w-full xl:w-2/5 p-12 overflow-hidden md:pt-1">
-                <img src="images/Interactive-Photo-Gallery.png" alt="project name" class="rounded-3xl text-white" />
-                    <div class="flex items-center mt-10 justify-center">
-                    <div>
-                    </div>
-                    </div>
-            </div>
-        </div>
-
-      <!-- Project Four -->
-    <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center " id="project-four">
-            
-            <div class="flex flex-col w-full p-4 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-                <h1 class="font-semibold font-poppins text-xl text-white md:text-xl lg:text-3xl text-left md:text-left mt-5 underline decoration-slate-500">Game Show App</h1>
-                    <p class="main-font font-semibold font-montserrat text-xl mt-16" id="p4">Approach</p>
-                    <p class="para-4">This project is a browser version of “Wheel of Success”, a word guessing game. Using Javascript. HTML/CSS/JavaScript</p>
-                    <hr style="height:3px;border-width:0;color:paleturquoise;background-color:paleturquoise">
-                <div class="flex space-x-8 my-2 md:items-center justify-center mb-16">
-                    <a href="https://gomezzzer.github.io/Game-Show-App/" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-16 flex items-center space-x-3 border-solid border-2 border-white text-xl sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            <span>Live Demo</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/Gomezzzer/Game-Show-App.git" target="_blank" rel="noopener noreferrer">
-                        <div class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-16 flex items-center text-xl w-full sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                            <span class="">Source Code</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="w-full xl:w-2/5 p-12 overflow-hidden md:pt-1">
-                <img src="images/Game-Show-App.png" alt="project name" class="rounded-3xl text-white" />
-                    <div class="flex items-center mt-10 justify-center">
-                    <div>
-                    </div>
-                    </div>
-            </div>
-        
-    </div> 
-     <!-- Project Five -->
-    <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center " id="project-five">
-        
-        <div class="flex flex-col w-full p-4 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-            <h1 class="font-semibold font-poppins text-xl text-white md:text-xl lg:text-3xl text-left md:text-left mt-5 underline decoration-slate-500">Mobile First Responsive Layout</h1>
-                <p class="main-font font-semibold font-montserrat text-xl mt-16" id="p5">Approach</p>
-                <p class="para-5">Web page that functions well on multiple screens. Utilizing min-width media queries, breakpoints for tablet and desktop screens. HTML/CSS</p>
-                <hr style="height:3px;border-width:0;color:paleturquoise;background-color:paleturquoise">
-            <div class="flex space-x-8 my-2 md:items-center justify-center mb-16">
-                <a href="https://gomezzzer.github.io/Mobile-First-Responsive-layout/" target="_blank" rel="noopener noreferrer">
-                    <div class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-16 flex items-center space-x-3 border-solid border-2 border-white text-xl sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                        <span>Live Demo</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Gomezzzer/Mobile-First-Responsive-layout.git" target="_blank" rel="noopener noreferrer">
-                    <div class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-16 flex items-center text-xl w-full sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                        <span class="">Source Code</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-        
-        <div class="w-full xl:w-2/5 p-12 overflow-hidden md:pt-1">
-            <img src="images/Mobile-First-layout.png" alt="project name" class="rounded-3xl text-white"/>
-                <div class="flex items-center mt-10 justify-center">
-                <div>
-                </div>
-                </div>
-        </div>
-    
-    </div> 
-     <!-- Project Six -->
-    <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center " id="project-six">
-    
-        <div class="flex flex-col w-full p-4 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-            <h1 class="font-semibold font-poppins text-xl text-white md:text-xl lg:text-3xl text-left md:text-left mt-5 underline decoration-slate-500">Coo Startup Employee Directory</h1>
-                <p class="main-font font-semibold font-montserrat text-xl mt-16" id="p6">Approach</p>
-                <p class="para-6">An employee directory, request a JSON object from the API using fetch so that employees are listed in a grid with their details. HTML/CSS</p>
-                
-                <hr style="height:3px;border-width:0;color:paleturquoise;background-color:paleturquoise">
-            <div class="flex space-x-8 my-2 md:items-center justify-center mb-16">
-                <a href="https://gomezzzer.github.io/techdegree-project-8/" target="_blank" rel="noopener noreferrer">
-                    <div class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-16 flex items-center space-x-3 border-solid border-2 border-white text-xl sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                        <span>Live Demo</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Gomezzzer/techdegree-project-8.git" target="_blank" rel="noopener noreferrer">
-                    <div class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-16 flex items-center text-xl w-full sm:w-auto hover:border-2 hover:bg-slate-800"> 
-                        <span class="">Source Code</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    
-        <div class="w-full xl:w-2/5 p-12 overflow-hidden md:pt-1">
-            <img src="images/Awesome-Startup-Employee-Directory.png" alt="project name" class="rounded-3xl text-white"/>
-                <div class="flex items-center mt-10 justify-center">
-                <div>
-                </div>
-                </div>
-        </div>
-    
-    </div> 
-
-</section>     
-
-
-    <hr style="height:2px;border-width:0;color:#20b6ac;background-color:#20b6ac">
-     <!-- Skills section -->
-     <section class="bg-primary mb-20" id="skills">
-        <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <div class="flex flex-col w-full p-6 xl:w-2/5 justify-center lg:items-start">
-                <h1 class="Skills">Skills & Tools</h1>
-                    <p class="text-[#20b6ac] font-medium font-montserrat text-3xl">Development</p>
-                    <div class="flex justify-between">
-                        <div class="grid">
-                                <!-- Skills icons -->
-                                <div>
-                                    <p class="main-font font-semibold font-montserrat text-xl mt-16">Html5</p>
-                                    <img width="50" height="50" src="images/html.svg" alt="Html5"/>
-                                    
-                                </div>
-                                <div>
-                                    <p class="main-font font-semibold font-montserrat text-xl mt-16">CSS3</p>
-                                    <img width="50" height="70" src="images/css.svg" alt="CSS3"/>
-                                    
-                                </div>
-                                <div>
-                                    <p class="main-font font-semibold font-montserrat text-xl mt-16">JavaScript</p>
-                                    <img width="50" height="70" src="images/js.svg" alt="JavaScript"/>
-                                    
-                                </div>
-                                <div>
-                                    <p class="main-font font-semibold font-montserrat text-xl mt-16">Bootstrap</p>
-                                    <img width="60" height="70" src="images/bootstrap-icon.jpg" alt="Bootstrap"/>
-                                    
-                                </div>
-                                <div>
-                                    <p class="main-font font-semibold font-montserrat text-xl mt-16">VScode</p>
-                                    <img width="50" height="70" src="images/vscode.png" alt="VScode"/>
-                                    
-                                </div>
-                            
-                            </div>
-                        </div>
-            </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="images/bootstrap-icon.jpg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="images/vscode.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="images/sass.jpg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
         </div>
       </section>
-      <hr style="height:2px;border-width:0;color:#20b6ac;background-color:#20b6ac">
 
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="images/Online-Registration-Form.png"
+              alt="Online-Registration-Form"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Online-Registration-Form</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="images/Game-Show-App.png"
+              alt="Game-Show-App"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Game-Show-App</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="images/Interactive-Photo-Gallery.png"
+              alt="Interactive-Photo-Gallery"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Interactive-Photo-Gallery</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+      </section>
 
     <!-- Contact section -->
-    <section class="bg-section-two" id="contact">
-        <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <div class="flex flex-col w-full xl:w-3/5 p-5 pb-24 justify-center lg:items-start overflow-y-hidden">
-                <h1 class="font-semibold font-poppins text-contact text-white md:text-2xl lg:text-5xl text-left md:text-left ">Contact</h1>
-                <form class="w-full2">
-                    <div class="mb-6 mt-20">
-                        <label for="email" class="block mb-2 font-bold text-lg font-poppins main-font">Full Name</label>
-                        <input type="email" id="email" class="bg-primary text-gray-900 text-sm rounded-lg block w-full p-5 dark:text-white focus:outline-none focus:ring focus:border-main-font">
-                    </div>
-                    <div class="mb-6">
-                        <label for="email" class="block mb-2 text-lg font-bold font-poppins main-font">Email</label>
-                        <input type="email" id="password" class="bg-primary text-gray-900 text-sm rounded-lg  block w-full p-5  dark:text-white focus:outline-none focus:ring focus:border-main-font" placeholder="you@email.com" required>
-                    </div>
-                    <div class="flex items-start mb-6">
-                        <div class="container">
-                            <label for="message" class="block mb-2 text-lg font-bold font-poppins main-font">Message</label>
-                            <textarea id="message" rows="5" class=" block rounded-lg bg-primary dark:text-white w-full  focus:outline-none focus:ring focus:border-main-font"></textarea>
-                        </div>
-                    </div>
-                        <button type="submit" class="text-white text-xl bg-button rounded-lg w-full sm:w-auto px-8 py-3 mt-8 bg-button text-center font-bold font-poppins hover:border-2 hover:bg-slate-800">Send</button>
-                </form> 
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
               </div>
-              
-            </div>
-            <!--
-            <div class="w-full xl:w-2/5 p-12 overflow-hidden">
-                <img src="images/chicago.jpg" alt="Reporting" class="rounded-3xl mx-auto w-full md:w-2/5"/>
-            </div>
-            -->
-    </section>
-    <hr style="height:2px;border-width:0;color:#20b6ac;background-color:#20b6ac">
-
-
-    
-    <!-- Footer -->
-    <footer class="bg-primary p-10">
-        <div class="container flex flex-row flex-wrap justify-evenly">
-            <div class="flex flex-row flex-wrap  md:flex-col justify-center items-center">
-                <div class="flex mt-16 mb-6 flex-row space-x-6 justify-center">
-                    <h1 class="text-white font-montserrat font-bold text-lg">Find me</h1>
-                        <a href="https://www.linkedin.com/in/jorge-gomez-a6865313a/" class="">
-                            <img width="36" height="45" src="images/linkedin-icon.svg" alt="Linkedin" class="text-white -mt-1"/>
-                        </a>
-                        <a href="https://github.com/Gomezzzer" class="">
-                            <img width="24" height="40" src="images/github-icon.svg" alt="GitHub" class=" text-white mt-1"/>
-                        </a>
-                        <a href="https://twitter.com/Gomezzzer" class="">
-                            <img width="25" height="35" src="images/twitter-icon.svg" alt="Twitter" class="text-white mt-1"/>
-                        </a>
-                        <a href="mailto:gomezgeorge132@gmail.com" class="">
-                            <img width="32" height="40" src="images/email-icon.svg" alt="Email" class="text-white"/>
-                        </a>
-                </div>
-                <div class="mt-6 mb-16">
-                    <p class="main-font text-lg font-montserrat">
-                        @Jorge Gomez 2022
-                    </p>
-                </div>
-            </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
         </div>
-        <div class="flex relative">
-            <a class="flex absolute bottom-0 right-0" href="#top">
-                <div class="p-3 rounded-xl text-white font-bold font-poppins border-solid border-2 border-[#F62BA5] hover:border-2 hover:bg-slate-800 absolute bottom-0 right-0"> 
-                    Top
-                </div>
-            </a>
-        </div>
-    </footer>
+      </section>
 
- <script src="js/app.js"></script>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="#" target="_blank"
+          ><img
+            src="images/twitter logo.jpg"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="images/linkedin-icon.svg"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="images/github-icon.jpg"
+            alt="Github"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="images/github-icon.jpg" alt="Github" class="socicon"
+        /></a>
 
-   
-</body>
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+  /></i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2021</p>
+        <p class="copy">
+          Built with &#x2661; by
+          <a href="https://gomezzzer.github.io/Gomezzzer2.github.io/" target="_blank"
+            >George Gomez</a
+          >
+        </p>
+  </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
