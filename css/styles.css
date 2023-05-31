@@ -275,6 +275,9 @@ nav {
     text-align: center;
     margin: 2rem 0 0;
   }
+  footer p{
+    color: var(--primary-color);
+  }
   .scroll-up {
     position: fixed;
     right: 0.5%;
