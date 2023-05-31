@@ -80,7 +80,7 @@ nav {
   }
   .burger-menu {
     color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 3rem;
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -302,6 +302,7 @@ nav {
       text-align: center;
       transform: translateX(120%);
       transition: transform 0.5s ease-in;
+      border-radius: 18%;
     }
   
      nav ul li {
@@ -389,13 +390,13 @@ nav {
     .projects-container {
       flex-direction: column;
     }
-  
     .project-container {
       width: 20.875rem;
     }
     .contact-form-container {
       max-width: 23.75rem;
     }
+  
   }
 
   @media screen and (max-width: 420px) {
