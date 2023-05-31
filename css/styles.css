@@ -260,7 +260,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 1%;
+    right: 2%;
     bottom: 50%;
   }
   
@@ -406,6 +406,7 @@ nav {
   
     .bio {
       width: 18.3rem;
+      margin-top: 2rem;
     }
   
     .project-container {
