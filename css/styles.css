@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
+
 /* Variables */
 :root {
   --font-family: "Roboto", sans-serf;
@@ -59,6 +60,8 @@ nav {
   }
   nav h1 {
     color: var(--primary-color);
+    font-family: 'Bruno Ace', cursive;
+    
   }
   
   nav a {
@@ -258,7 +261,7 @@ nav {
   }
   .socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     position: fixed;
     right: 2%;
     bottom: 50%;
@@ -415,9 +418,18 @@ nav {
   
     .project-container {
       width: 17.875rem;
+      align-items: center;
     }
   
     .contact-form-container {
       max-width: 17.75rem;
     }
+    .socials {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      right: 2%;
+      bottom: 50%;
+    }
+   
   } 
