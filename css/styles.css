@@ -297,6 +297,7 @@ nav {
     /*changes reflects on screen with a width of 720px and below*/
     nav {
       padding: 1.5rem 1rem;
+      margin-right: -.5rem;
     }
     nav ul {
       position: fixed;
@@ -407,7 +408,7 @@ nav {
 
   @media screen and (max-width: 420px) {
     .hero img {
-      height: 29.5rem;
+      height: 26.5rem;
       width: 23rem;
     }
   
