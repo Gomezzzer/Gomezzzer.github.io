@@ -30,7 +30,6 @@ navLink.forEach((link) =>
   })
 );
 	
-	
 
 	
 

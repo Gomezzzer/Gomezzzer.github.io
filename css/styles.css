@@ -202,6 +202,7 @@ nav {
     padding: 20px;
     margin: 10px;
   }
+  
   .contact {
     margin-top: 2rem;
   }
@@ -381,14 +382,13 @@ nav {
     .more-about {
       margin-top: 2rem;
       padding: 1rem 3.5rem;
-    }
-  
+    }  
     .more-about h2 {
       text-align: center;
     }
   
     .more-about p {
-      text-align: justify;
+      text-align:center;
     }
     .icon {
       width: 5.875rem;
@@ -408,8 +408,9 @@ nav {
 
   @media screen and (max-width: 420px) {
     .hero img {
-      height: 26.5rem;
-      width: 23rem;
+      height: 19.5rem;
+      width: 17rem;
+    /*  padding-top: 6rem;*/
     }
   
     .bio {
