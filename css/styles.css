@@ -4,10 +4,12 @@
 /* Variables */
 :root {
   --font-family: "Roboto", sans-serf;
+  --font-color: black;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
+  --hero-color: #fff;
   --primary-color: #4756df;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
@@ -16,6 +18,13 @@
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+}
+.dark-theme {
+  --bg-color: #000106;
+
+  --font-color: #4756df;
+
+  --hero-color: #000106;
 }
 /* Variables end */
 
@@ -29,7 +38,10 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
 ul {
   list-style-type: none;
 }
@@ -90,11 +102,13 @@ nav {
     display: none;
   }
   .hero {
+    background-color: var(--hero-color);
+    color: var(--font-color);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    max-width: 68.75rem;
+    max-width: 80.75rem;
     margin: auto;
   }
   .hero img {
@@ -125,21 +139,26 @@ nav {
   .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
+    color: var(--font-color);
   }
   
   .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
+    color: var(--font-color);
   }
   .skills {
-    max-width: 68.75rem;
+    max-width: 80.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: -0.5rem;
+    padding-top: 3.5rem;
+    background-color: var(--hero-color);
   }
   
   .skill-header {
     margin-bottom: 1rem;
+    color: var(--font-color);
   }
   
   .skills-wrapper img {
@@ -159,8 +178,9 @@ nav {
   }
   .projects {
     background-color: var(--bg-color);
-    padding: 32px 0;
-    margin-top: 2rem;
+    padding: 65px 0;
+    margin-top: 0rem;
+    color: var(--font-color);
   }
   
   .project-pic {
@@ -196,7 +216,7 @@ nav {
   }
   
   .project-card {
-    background-color: #fff;
+    background-color: var(--hero-color);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
@@ -204,12 +224,16 @@ nav {
   }
   
   .contact {
-    margin-top: 2rem;
+    margin-top: 0rem;
+    padding-top: 2.5rem;
+    background-color:  var(--hero-color);
+    padding-bottom: 3rem;
   }
   
   .contact h2 {
     text-align: center;
     margin-bottom: var(--bottom-margin-2);
+    color: var(--font-color);
   }
   
   .contact-form-container {
@@ -275,9 +299,9 @@ nav {
   
   footer {
     background-color: var(--bg-color);
-    padding: 1.25rem;
+    padding: 2.25rem;
     text-align: center;
-    margin: 2rem 0 0;
+    margin: 0rem 0 0;
   }
   footer p{
     color: var(--primary-color);
@@ -380,11 +404,13 @@ nav {
       width: 20.5rem;
     }
     .more-about {
-      margin-top: 2rem;
+      margin-top: 0rem;
       padding: 1rem 3.5rem;
+      background-color: var(--bg-color);
     }  
     .more-about h2 {
       text-align: center;
+      margin-top: 2rem;
     }
   
     .more-about p {
