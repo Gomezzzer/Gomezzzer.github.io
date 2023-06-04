@@ -433,6 +433,10 @@ nav {
   }
 
   @media screen and (max-width: 420px) {
+    #icon {
+      width: 30px;
+      cursor: pointer;
+    }
     .hero img {
       height: 19.5rem;
       width: 17rem;
