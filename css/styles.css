@@ -322,7 +322,7 @@ nav {
     /*changes reflects on screen with a width of 720px and below*/
     nav {
       padding: 1.5rem 1rem;
-      margin-right: -.2em;
+      margin-right: 0px;   
     }
     nav ul {
       position: fixed;
