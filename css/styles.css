@@ -318,6 +318,27 @@ nav {
     height: 3rem;
   }
 
+  @media only screen  and (min-width : 1280px) {
+    .hero {
+      background-color: var(--hero-color);
+      color: var(--font-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 100rem;
+      margin: auto;
+    }
+    .skills {
+      max-width: 100rem;
+      margin: auto;
+      text-align: center;
+      margin-top: -0.5rem;
+      padding-top: 3.5rem;
+      background-color: var(--hero-color);
+    }
+  }
+
   @media screen and (max-width: 720px) {
     /*changes reflects on screen with a width of 720px and below*/
     nav {
