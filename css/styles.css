@@ -230,8 +230,11 @@ nav {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+    transition: 1s;
   }
-  
+  .project-container:hover {
+    transform:scale(1.3);
+  }
   .contact {
     margin-top: 0rem;
     padding-top: 2.5rem;
@@ -500,7 +503,6 @@ nav {
     .projects-container {
       align-items: center;
     }
-  
     .contact-form-container {
       max-width: 17.75rem;
     }
