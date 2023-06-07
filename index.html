@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!--CSS Styles -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -94,43 +98,44 @@
     <!-- Skills section -->
     <section class="skills" id="skills">
         <h2 class="skill-header">My Top Skills</h2>
-  
+
         <div class="skills-wrapper">
           <div class="first-set animate__animated animate__pulse">
-            <img
+            <img id="slide-1"
               src="images/html.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
-            <img
+            <img id="slide-2"
               src="images/css.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
-            <img
+            <img id="slide-3"
               src="images/js.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
           </div>
-  
+
+          
           <div class="second-set animate__animated animate__pulse">
-            <img
+            <img id="slide-4"
               src="images/ruby.png"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
-            <img
+            <img id="slide-5"
               src="images/vscode.png"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
-            <img
+            <img id="slide-6"
               src="images/github-logo.png"
               alt=""
               loading="lazy"
@@ -145,66 +150,67 @@
     <!-- Projects section -->
     <section class="projects" id="projects">
         <h2 class="projects-title">Some of my Recent Projects</h2>
-         <div class="projects-container">
-          <div class="project-container project-card">
-            <img
-              src="images/Online-Registration-Form.png"
-              alt="Online-Registration-Form"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Registration-Form</h3>
-            <p class="project-details">
-              This project has a form to be filled out by a user, a dropdown menu for inputing a State, and utilizes media queries for a responsive layout.
-            </p>
-            <a role="button" href="https://github.com/Gomezzzer/Online-Registration-Form.git" target="blank" class="project-link">View Code</a>
-            <a href="https://gomezzzer.github.io/Online-Registration-Form/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
-          </div>
-        
-          <div class="project-container project-card">
-           <img
-              src="images/Game-Show-App.png"
-              alt="Game-Show-App"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Game-Show-App</h3>
-            <p class="project-details">
-              A game where you have five chances to guess a random phrase. utilizing JavaScript arrays, functions, and event listeners.
-            </p>
-            <a role="button" href="https://github.com/Gomezzzer/Game-Show-App.git" target="blank" class="project-link">View Code</a>
-            <a href="https://gomezzzer.github.io/Game-Show-App/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
-          </div>
-        
-          <div class="project-container project-card">
-              <img
-              src="images/Interactive-Photo-Gallery.png"
-              alt="Interactive-Photo-Gallery"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Interactive-Gallery</h3>
-            <p class="project-details">
-              A photo gallery where you can filter photos by name and caption. This project uses CSS grid and baguetteBox.js. 
-            </p>
-            <a role="button" href="https://github.com/Gomezzzer/Interactive-Photo-Gallery.git" target="blank" class="project-link">View Code</a>
-            <a href="https://gomezzzer.github.io/Interactive-Photo-Gallery/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
-          </div>
 
-          <div class="project-container project-card">
+         <div class="projects-container">
+            <div class="project-container project-card">
               <img
-              src="images/Awesome Startup Employee Directory.png"
-              alt="Awesome Startup Employee Directory"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Startup Employee Directory</h3>
-            <p class="project-details">
-              Employee Directory generated by utilizing FetchAPI. It uses randomuser.me and displays them in a responsive grid. 
-            </p>
-            <a role="button" href="https://github.com/Gomezzzer/techdegree-project-8.git" target="blank" class="project-link">View Code</a>
-            <a href="https://gomezzzer.github.io/techdegree-project-8/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
-         </div>
+                src="images/Online-Registration-Form.png"
+                alt="Online-Registration-Form"
+                loading="lazy"
+                class="project-pic"
+              />
+              <h3 class="project-title">Registration-Form</h3>
+              <p class="project-details">
+                This project has a form to be filled out by a user, a dropdown menu for inputing a State, and utilizes media queries for a responsive layout.
+              </p>
+              <a role="button" href="https://github.com/Gomezzzer/Online-Registration-Form.git" target="blank" class="project-link">View Code</a>
+              <a href="https://gomezzzer.github.io/Online-Registration-Form/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
+            </div>
+
+            <div class="project-container project-card">
+            <img
+                src="images/Game-Show-App.png"
+                alt="Game-Show-App"
+                loading="lazy"
+                class="project-pic"
+              />
+              <h3 class="project-title">Game-Show-App</h3>
+              <p class="project-details">
+                A game where you have five chances to guess a random phrase. utilizing JavaScript arrays, functions, and event listeners.
+              </p>
+              <a role="button" href="https://github.com/Gomezzzer/Game-Show-App.git" target="blank" class="project-link">View Code</a>
+              <a href="https://gomezzzer.github.io/Game-Show-App/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
+            </div>
+
+            <div class="project-container project-card">
+                <img
+                src="images/Interactive-Photo-Gallery.png"
+                alt="Interactive-Photo-Gallery"
+                loading="lazy"
+                class="project-pic"
+              />
+              <h3 class="project-title">Interactive-Gallery</h3>
+              <p class="project-details">
+                A photo gallery where you can filter photos by name and caption. This project uses CSS grid and baguetteBox.js. 
+              </p>
+              <a role="button" href="https://github.com/Gomezzzer/Interactive-Photo-Gallery.git" target="blank" class="project-link">View Code</a>
+              <a href="https://gomezzzer.github.io/Interactive-Photo-Gallery/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
+            </div>
+
+            <div class="project-container project-card">
+                <img
+                src="images/Awesome Startup Employee Directory.png"
+                alt="Awesome Startup Employee Directory"
+                loading="lazy"
+                class="project-pic"
+              />
+              <h3 class="project-title">Startup Employee Directory</h3>
+              <p class="project-details">
+                Employee Directory generated by utilizing FetchAPI. It uses randomuser.me and displays them in a responsive grid. 
+              </p>
+              <a role="button" href="https://github.com/Gomezzzer/techdegree-project-8.git" target="blank" class="project-link">View Code</a>
+              <a href="https://gomezzzer.github.io/techdegree-project-8/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
+          </div>
 
         <div class="project-container project-card">
             <img
@@ -215,7 +221,7 @@
           />
           <h3 class="project-title">Space Tourism</h3>
           <p class="project-details">
-            This Space travel website is a frontend developer course by Scrimba, utilizing HTML, CSS, and JavaScript.
+            This Space travel website is a frontend developer course project by Scrimba, utilizing HTML, CSS, and JavaScript.
           </p>
           <a role="button" href="https://github.com/Gomezzzer/space-tourism-website.git" target="blank" class="project-link">View Code</a>
           <a href="https://gomezzzer.github.io/space-tourism-website/" target="_blank" class="project-link">&nbsp;View site&nbsp;</a>
@@ -356,5 +362,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   </body>
 </html>

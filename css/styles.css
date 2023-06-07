@@ -82,7 +82,7 @@ nav {
   }
   
   nav a {
-    color: var(--primary-color);
+    color: var(--hero-color);
     transition: var(--transition);
   }
   nav a:hover {
@@ -120,8 +120,9 @@ nav {
     margin: auto;
   }
   .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+    height: 30.5rem;
+    width: 30.5rem;
+    border-radius: 10%;
   }
   
   .bio {
@@ -184,6 +185,7 @@ nav {
     padding: 20px;
     margin: 10px;
   }
+  
   .projects {
     background-color: var(--bg-color);
     padding: 65px 0;
@@ -334,6 +336,7 @@ nav {
     height: 3rem;
   }
 
+
   @media only screen  and (min-width : 1280px) {
     .hero {
       background-color: var(--hero-color);
@@ -374,11 +377,12 @@ nav {
     }
     nav ul {
       position: fixed;
-      background-color: var(--bg-color);
+      background-color: var(--primary-color);
       flex-direction: column;
-      top: 86px;
-      left: 10%;
-      width: 80%;
+      top: 81px;
+      left: 2%;
+      width: 96%;
+      height: 48%;
       text-align: center;
       transform: translateX(120%);
       transition: transform 0.5s ease-in;
@@ -488,7 +492,6 @@ nav {
     .hero img {
       height: 19.5rem;
       width: 17rem;
-    /*  padding-top: 6rem;*/
     }
   
     .bio {
