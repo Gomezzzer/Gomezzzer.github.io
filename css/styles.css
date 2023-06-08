@@ -498,8 +498,10 @@ nav {
       margin-right: 4rem;
     }
     .hero img {
-      height: 19.5rem;
-      width: 17rem;
+      padding-top: 5rem;
+      padding-bottom: 0rem;
+      height: 24.5rem;
+      width: 21rem;
     }
   
     .bio {
