@@ -99,14 +99,6 @@ nav {
     font-weight: var(--bold-font);
   }
   .burger-menu {
-    color: var(--primary-color);
-    font-size: 3rem;
-    border: 0;
-    background-color: transparent;
-    background-image: linear-gradient(to left, transparent 25%, var(--primary-color));
-    border-radius: 44% 0 0 8%;
-    z-index: -2;
-    cursor: pointer;
     display: none;
   }
   .hero {
@@ -122,7 +114,7 @@ nav {
   .hero img {
     height: 30.5rem;
     width: 30.5rem;
-    border-radius: 10%;
+    border-radius: 0%;
   }
   
   .bio {
@@ -348,6 +340,15 @@ nav {
       max-width: 100rem;
       margin: auto;
     }
+    .hero img {
+      height: 30.5rem;
+      width: 30.5rem;
+      border-radius: 0%;
+      margin-right: 5rem;
+      margin-left: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
     .skills {
       max-width: 100rem;
       margin: auto;
@@ -395,6 +396,8 @@ nav {
       margin: 8px;
     }
     .burger-menu {
+      color: var(--primary-color);
+      font-size: 3rem;
       display: block;
       position: absolute;
       z-index: 2000;
@@ -407,7 +410,6 @@ nav {
       aspect-ratio: 1;
       border: 0;
     }
-  
     nav ul.show {
       transform: translateX(0);
     }
@@ -416,13 +418,11 @@ nav {
       flex-direction: column;
       gap: 0;
     }
-  
     .hero img {
           height: 37.5rem;
           width: 30rem;
-      }
-  
-    .bio {
+    }
+   .bio {
       margin-top: -7rem;
       width: 20.5rem;
     }
@@ -430,11 +430,9 @@ nav {
       margin-top: 2rem;
       padding: 1rem 3.5rem;
     }
-  
     .more-about h2 {
       text-align: center;
     }
-  
     .more-about p {
       text-align: justify;
     }
@@ -457,13 +455,11 @@ nav {
       flex-direction: column;
       gap: 0;
     }
-  
     .hero img {
           height: 37.5rem;
           width: 30rem;
-      }
-  
-    .bio {
+    }
+   .bio {
       margin-top: -7rem;
       width: 20.5rem;
     }
@@ -476,7 +472,6 @@ nav {
       text-align: center;
       margin-top: 2rem;
     }
-  
     .more-about p {
       text-align:center;
     }
