@@ -72,7 +72,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: transparent;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -543,6 +543,30 @@ nav {
     }
     nav ul.show {
       transform: translateX(0);
+    }
+    #intro {
+      min-height: 600px;
+    }
+    .intro-content h1 {
+      font-size: 42px;
+      margin-bottom: .6rem;
+    }
+    .intro-content h5 {
+      font-size: 1.5rem;
+      margin-bottom: .3rem;
+      letter-spacing: .2rem;
+    }
+    .intro-content .intro-position {
+      font-size: 1.2rem;
+    }
+    .intro-content .intro-position span {
+      padding: 0 .6rem;
+    }
+    .intro-content .intro-position span::before, .intro-content .intro-position span::after {
+      display: none !important;
+    }
+    .intro-social {
+      font-size: 2.4rem;
     }
     .hero {
       margin-top: -4rem;
